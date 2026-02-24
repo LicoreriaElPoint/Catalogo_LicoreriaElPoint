@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Licorería El Point</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: white;
+}
+
+header {
+    background: black;
+    padding: 20px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #FFD700;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: #1c1c1c;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card h3 {
+    margin: 0 0 10px;
+}
+
+.price {
+    color: #00ff88;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.btn {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    background: #25D366;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: black;
+    font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+🍻 LICORERÍA EL POINT 🔥
+</header>
+
+<div class="container">
+
+<!-- ===== COMBO 1 ===== -->
+<div class="card">
+    <img src="imagenes/combo1.jpg" alt="Combo Russkaya Clásico">
+    <div class="card-content">
+        <h3>👑 Combo Russkaya Clásico</h3>
+        <p>Vodka 750ml + Gaseosa 1.5L + Hielo</p>
+        <p class="price">S/ 59.90</p>
+        <a class="btn" href="https://wa.me/51999999999" target="_blank">
+            Pedir por WhatsApp
+        </a>
+    </div>
+</div>
+
+<!-- ===== COMBO 2 ===== -->
+<div class="card">
+    <img src="imagenes/combo2.jpg" alt="Combo Previa">
+    <div class="card-content">
+        <h3>🔥 Combo Previa</h3>
+        <p>6 Cervezas + Hielo + Piqueo</p>
+        <p class="price">S/ 39.90</p>
+        <a class="btn" href="https://wa.me/51999999999" target="_blank">
+            Pedir por WhatsApp
+        </a>
+    </div>
+</div>
+
+<!-- ===== COMBO 3 ===== -->
+<div class="card">
+    <img src="imagenes/combo3.jpg" alt="Combo Reunión">
+    <div class="card-content">
+        <h3>🥃 Combo Reunión</h3>
+        <p>Ron o Vodka + 2 Gaseosas + Hielo</p>
+        <p class="price">S/ 69.90</p>
+        <a class="btn" href="https://wa.me/51999999999" target="_blank">
+            Pedir por WhatsApp
+        </a>
+    </div>
+</div>
+
+</div>
+
+<footer>
+🛵 Delivery rápido | Promos válidas hasta sábado 12:00 p.m.
+</footer>
+
+</body>
+</html>
